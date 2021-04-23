@@ -73,7 +73,6 @@ img {
 
 /* header */
 .header {
-  padding: 25px 0;
   border-bottom: 1px solid #ECECEC;;
 }
 
@@ -100,6 +99,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   margin-right: 93px;
+  padding: 25px 0px;
 }
 .logo-color.header {
   color: var(--accent-color);
@@ -115,6 +115,8 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em; 
+  display: inline-flex;
+  padding: 32px 0;
 }
 
 /* section hero */
@@ -198,19 +200,21 @@ img {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-background-color);
 }
+
+.team-cards {
+  padding: 30px 0px;
+}
 .team-subtitle {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .team-text {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
-  margin-bottom: 30px;
 }
 
 /* footer */
@@ -230,19 +234,20 @@ img {
 .logo-color.footer {
   color: var(--accent-color);
   padding: 0;
-  }
+}
 .footer-contacts .link {
   color: var(--accent-text-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   display: inline-block;
-  }
-.link.mail,
-.link.tel {
+}
+
+.contacts-item:not(:first-child) {
   opacity: 0.6;
   margin-top: 9px;
 }
+
 .link {
   text-decoration: none;
 }
@@ -296,19 +301,19 @@ img {
 .portfolio-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
-.projects-subtitle {
+.project-subtitle {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.projects-text {
+.project-text {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
 }
-.cards {
+.project-cards {
   border: 1px solid #EEEEEE;
   border-top: none;
   padding: 20px 24px;
